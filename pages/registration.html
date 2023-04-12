@@ -1,1 +1,187 @@
-git 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+ .container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto; 
+}
+
+.container .content {
+  position: absolute; 
+  bottom: 0%;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px; 
+}
+        *
+        {
+            margin: 0%;
+            padding: 0%;
+        }
+        form{
+            padding: 15px;
+        }
+        .buy-now-container
+        {
+            width: 100vw;
+           min-height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 18px;
+           font-weight: bold;
+        }
+        .container-md
+        {
+           height: 380px;
+           width: 700px;
+           display: flex;
+           justify-content: space-between;
+           align-items: flex-start;
+           padding: 15px;
+        }
+        .left
+        {
+           width: 50%;
+        }
+        .right
+        {
+            width: 50%;
+        }
+        form input[type="text"]
+        {
+            width: 100%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            outline: none;
+        }
+        #zip
+        {
+            display: flex;
+            margin-top: 5px;
+        }
+        #zip select{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        #zip input[type="number"]
+        {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-left: 5px;
+        }
+        .submit
+        {
+            width: 100%;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            margin-top: 10px;
+            background: #34495e;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .submit:hover
+        {
+            background: #2c3e50;
+        }
+        .home-page
+        {
+            margin-top: 20px;
+            font-size: 15px;
+            margin-left: 310px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/back.jpg" alt="Notebook" style="width:100%; filter: blur(2px); height: 100%;">
+        <div class="content">
+            <header class="buy-now-container">
+                <div class="container-md">
+                    <div class="left">
+                        <h3 style="color: white;">Registration</h3>
+                        <form action="">
+                 <label for="full_name">Full name</label>
+                <input type="text" id="full_name" placeholder="Enter Name" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email" required>
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter Address" required>
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="Enter City" required>
+                   <div id="zip">
+                    <label for="state">
+                        Courses
+                        <select name="" id="">
+                            <option value="">Choose Course</option>
+                            <option value="">javaScript</option>
+                            <option value="">HTMl & CSS</option>
+                            <option value="">Python</option>   
+                            <option value="">Web Desing</option>  
+                            <option value="">Web Development</option>  
+                            <option value="">Angular</option>       
+                        </select>
+                    </label>
+                    <label for="zip_code">
+                        Course Fee
+                        <input type="number" id="zip_code" placeholder="999">     
+                    </label>  
+                   </div>
+                        </form>
+                        <div class="home-page"> <a style="text-decoration: none;" href="../index.html">Home</a></div>
+                    </div>
+                    
+                    <div class="right">
+                        <h3 style="color: white;">Payment</h3>
+                        <form action="">
+                            Accepted Card
+                            <br/>
+                           <img src="../images/visa.png" height="40px" alt="">
+                           <img src="../images/credit-card.png" height="40px" alt="">
+                           <img src="../images/discover.png" height="40px" alt="">
+                           <img src="../images/american-express.png" height="40px" alt="">
+                           <br/>
+        
+                           <label for="credit">Credit Card Number</label>
+                           <input type="text" id="credit" placeholder="Enter Credit Number" required>
+                           <label for="month">Exp Month</label>
+                           <input type="text" id="month" placeholder="Enter Month" required>
+                              <div id="zip">
+                               <label for="Exp Year">
+                                 Exp Year
+                                   <select name="" id="">
+                                       <option value="">Choose Year</option>
+                                       <option value="">2028</option>
+                                       <option value="">2030</option>
+                                       <option value="">2026</option>   
+                                       <option value="">2032</option>       
+                                   </select>
+                               </label>
+                               <label for="cvv">
+                                  CVV
+                                   <input type="number" id="cvv" placeholder="cvv">     
+                               </label>         
+                   
+                              </div>
+                                   </form>
+                                   <input class="submit" type="submit" value="Proceed to Checkout">
+                                 
+                    </div>
+                  
+                </div>
+            </header>
+        </div>
+      </div>
+    
+</body>
+</html>
